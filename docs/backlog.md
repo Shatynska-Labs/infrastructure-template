@@ -720,7 +720,7 @@ The section also asserts nothing about two properties of `.github/workflows/pre-
 
 **Re-checked**: 2026-10-19.
 
-## `assert-every-role-has-a-mock_roles-entry`
+## `assert-every-role-has-a-mock-roles-entry`
 
 `.ansible-lint`'s `mock_roles:` hand-lists every role referenced by name, because ansible-lint does not resolve role references through `ansible/ansible.cfg`'s `roles_path`. Nothing asserts the list is complete. A role added under `ansible/roles/` and referenced from `ansible/playbooks/host-baseline.yml` without an entry fails ansible-lint twice with a false-positive "role not found" naming a search path, which reads as a configuration problem rather than a missing line (observed 2026-09-08 adding `swap`). The list is complete today.
 
