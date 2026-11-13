@@ -295,7 +295,7 @@ services:
       start_period: 10s
 
   prometheus:
-    image: prom/prometheus:v3.15.1
+    image: prom/prometheus:v3.16.0
     restart: unless-stopped
     labels:
       # apply-shipped-config-on-deploy. This is not metadata; it is what makes a
@@ -355,7 +355,7 @@ services:
       start_period: 20s
 
   alertmanager:
-    image: prom/alertmanager:v0.34.1
+    image: prom/alertmanager:v0.35.0
     restart: unless-stopped
     labels:
       # apply-shipped-config-on-deploy -- see the prometheus service above for
